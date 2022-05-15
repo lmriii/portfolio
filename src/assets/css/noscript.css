@@ -34,7 +34,7 @@
 		opacity: 1 !important;
 	}
 
-	#sidebar nav > ul > li {
+	#sidebar Navbar > ul > li {
 		-moz-transform: none !important;
 		-webkit-transform: none !important;
 		-ms-transform: none !important;

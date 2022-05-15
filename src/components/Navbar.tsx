@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import { Nav, Navbar, NavbarToggler, Collapse, NavItem, NavbarBrand, NavLink } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
+import '../assets/css/main.css';
+import '../assets/css/noscript.css';
 // import {Navlink} from 'react-router-dom'
 
 
@@ -16,10 +18,12 @@ export default function Navigation({}: Props) {
 
 
 	return (
-		<React.Fragment>
-		<Navbar >
-			<section id='sidebar'>
-			<div className='inner'>
+
+		<section id='sidebar'>
+		<div className='inner'>
+		<Navbar className='Navbar'>
+			
+			
 				<NavbarBrand></NavbarBrand>
 					<Nav>
 						<NavItem>
@@ -43,18 +47,12 @@ export default function Navigation({}: Props) {
 							</NavLink>
 						</NavItem>
 					</Nav>
-			</div>
-			</section>
-		</Navbar>
-{/* 
-			<ul>
-				<li><a href="#intro">Welcome</a></li>
-				<li><a href="#one">Who we are</a></li>
-				<li><a href="#two">What we do</a></li>
-				<li><a href="#three">Get in touch</a></li>
-			</ul> */}
 			
-		</React.Fragment>
+			
+		</Navbar>
+		</div>
+		</section>
+
 	);
 };
 

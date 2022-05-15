@@ -4,17 +4,17 @@ import { Routes, Route } from 'react-router-dom';
 import MainSection from "./MainSection";
 import Footer from "./Footer";
 
-export default function Layout(){
-    return(
+export default function Layout() {
+    return (
         <>
+            <div className="is-preload">
 
-
-      <Navigation />
-      <Routes>
-        <Route path='/' element={<MainSection />} />
-      </Routes>
-      <Footer />
-
+                <Navigation />
+                <Routes>
+                    <Route path='/' element={<MainSection />} />
+                </Routes>
+                <Footer />
+            </div>
         </>
     )
 }
