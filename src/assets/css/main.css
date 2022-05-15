@@ -6,7 +6,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-html, body, div, span, applet, object,
+html, #body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
@@ -28,7 +28,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-body {
+#body {
 	line-height: 1;
 }
 
@@ -50,7 +50,7 @@ table {
 	border-spacing: 0;
 }
 
-body {
+#body {
 	-webkit-text-size-adjust: none;
 }
 
@@ -77,13 +77,13 @@ input, select, textarea {
 		width: device-width;
 	}
 
-	body {
+	#body {
 		-ms-overflow-style: scrollbar;
 	}
 
 	@media screen and (max-width: 480px) {
 
-		html, body {
+		html, #body {
 			min-width: 320px;
 		}
 
@@ -97,11 +97,11 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
+	#body {
 		background: #312450;
 	}
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+		.is-preload *, .is-preload *:before, .is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
@@ -114,7 +114,7 @@ input, select, textarea {
 
 /* Type */
 
-	body, input, select, textarea {
+	#body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.55);
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16.5pt;
@@ -124,7 +124,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 1680px) {
 
-			body, input, select, textarea {
+			#body, input, select, textarea {
 				font-size: 13pt;
 			}
 
@@ -132,7 +132,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 1280px) {
 
-			body, input, select, textarea {
+			#body, input, select, textarea {
 				font-size: 12pt;
 			}
 
@@ -140,7 +140,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 360px) {
 
-			body, input, select, textarea {
+			#body, input, select, textarea {
 				font-size: 11pt;
 			}
 
@@ -2378,7 +2378,7 @@ input, select, textarea {
 		padding: 0.75em 1em;
 	}
 
-		body.is-ie textarea {
+		#body.is-ie textarea {
 			min-height: 10em;
 		}
 
@@ -2999,7 +2999,7 @@ input, select, textarea {
 		min-height: 22.5em;
 	}
 
-		body.is-ie .spotlights > section {
+		#body.is-ie .spotlights > section {
 			min-height: 0;
 		}
 
@@ -3072,12 +3072,12 @@ input, select, textarea {
 		}
 
 		.spotlights > section.inactive > .image:before,
-		body.is-preload .spotlights > section > .image:before {
+		.is-preload .spotlights > section > .image:before {
 			opacity: 1;
 		}
 
 		.spotlights > section.inactive > .content > .inner,
-		body.is-preload .spotlights > section > .content > .inner {
+		.is-preload .spotlights > section > .content > .inner {
 			-moz-transform: translateX(-1em);
 			-webkit-transform: translateX(-1em);
 			-ms-transform: translateX(-1em);
@@ -3109,7 +3109,7 @@ input, select, textarea {
 				}
 
 				.spotlights > section.inactive > .content > .inner,
-				body.is-preload .spotlights > section > .content > .inner {
+				.is-preload .spotlights > section > .content > .inner {
 					-moz-transform: translateY(1em);
 					-webkit-transform: translateY(1em);
 					-ms-transform: translateY(1em);
@@ -3279,7 +3279,7 @@ input, select, textarea {
 			min-height: 100vh;
 		}
 
-			body.is-ie .wrapper.fullscreen {
+			#body.is-ie .wrapper.fullscreen {
 				height: 100vh;
 			}
 
@@ -3289,7 +3289,7 @@ input, select, textarea {
 					min-height: calc(100vh - 2.5em);
 				}
 
-					body.is-ie .wrapper.fullscreen {
+					#body.is-ie .wrapper.fullscreen {
 						height: calc(100vh - 2.5em);
 					}
 
@@ -3302,7 +3302,7 @@ input, select, textarea {
 					min-height: 0;
 				}
 
-					body.is-ie .wrapper.fullscreen {
+					#body.is-ie .wrapper.fullscreen {
 						height: auto;
 					}
 
@@ -3321,7 +3321,7 @@ input, select, textarea {
 		}
 
 		.wrapper.fade-up.inactive > .inner,
-		body.is-preload .wrapper.fade-up > .inner {
+		.is-preload .wrapper.fade-up > .inner {
 			opacity: 0;
 			-moz-transform: translateY(1em);
 			-webkit-transform: translateY(1em);
@@ -3342,7 +3342,7 @@ input, select, textarea {
 		}
 
 		.wrapper.fade-down.inactive > .inner,
-		body.is-preload .wrapper.fade-down > .inner {
+		.is-preload .wrapper.fade-down > .inner {
 			opacity: 0;
 			-moz-transform: translateY(-1em);
 			-webkit-transform: translateY(-1em);
@@ -3359,7 +3359,7 @@ input, select, textarea {
 		}
 
 		.wrapper.fade.inactive > .inner,
-		body.is-preload .wrapper.fade > .inner {
+		.is-preload .wrapper.fade > .inner {
 			opacity: 0;
 		}
 
@@ -3383,7 +3383,7 @@ input, select, textarea {
 			font-weight: bold;
 		}
 
-		#header > Navbar {
+		#header > .Navbar {
 			-moz-flex: 1;
 			-webkit-flex: 1;
 			-ms-flex: 1;
@@ -3391,23 +3391,23 @@ input, select, textarea {
 			text-align: right;
 		}
 
-			#header > Navbar > ul {
+			#header > .Navbar > ul {
 				margin: 0;
 				padding: 0;
 			}
 
-				#header > Navbar > ul > li {
+				#header > .Navbar > ul > li {
 					display: inline-block;
 					margin-left: 1.75em;
 					padding: 0;
 					vertical-align: middle;
 				}
 
-					#header > Navbar > ul > li:first-child {
+					#header > .Navbar > ul > li:first-child {
 						margin-left: 0;
 					}
 
-					#header > Navbar > ul > li a {
+					#header > .Navbar > ul > li a {
 						border: 0;
 						color: rgba(255, 255, 255, 0.35);
 						display: inline-block;
@@ -3417,11 +3417,11 @@ input, select, textarea {
 						text-transform: uppercase;
 					}
 
-						#header > Navbar > ul > li a:hover {
+						#header > .Navbar > ul > li a:hover {
 							color: rgba(255, 255, 255, 0.55);
 						}
 
-						#header > Navbar > ul > li a.active {
+						#header > .Navbar > ul > li a.active {
 							color: #ffffff;
 						}
 
@@ -3446,16 +3446,16 @@ input, select, textarea {
 					padding: 1em 0;
 				}
 
-				#header > Navbar {
+				#header > .Navbar {
 					border-top: solid 1px rgba(255, 255, 255, 0.15);
 					text-align: inherit;
 				}
 
-					#header > Navbar > ul > li {
+					#header > .Navbar > ul > li {
 						margin-left: 1.5em;
 					}
 
-						#header > Navbar > ul > li a {
+						#header > .Navbar > ul > li a {
 							height: 6em;
 							line-height: 6em;
 						}
@@ -3563,16 +3563,16 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			body.is-ie #sidebar > .inner {
+			#body.is-ie #sidebar > .inner {
 				height: 100%;
 			}
 
-		#sidebar Navbar > ul {
+		#sidebar .Navbar > ul {
 			list-style: none;
 			padding: 0;
 		}
 
-			#sidebar Navbar > ul > li {
+			#sidebar .Navbar > ul > li {
 				-moz-transform: translateY(0);
 				-webkit-transform: translateY(0);
 				-ms-transform: translateY(0);
@@ -3587,151 +3587,151 @@ input, select, textarea {
 				position: relative;
 			}
 
-				#sidebar Navbar > ul > li:first-child {
+				#sidebar .Navbar > ul > li:first-child {
 					margin: 0;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(1) {
+				#sidebar .Navbar > ul > li:nth-child(1) {
 					-moz-transition-delay: 0.45s;
 					-webkit-transition-delay: 0.45s;
 					-ms-transition-delay: 0.45s;
 					transition-delay: 0.45s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(2) {
+				#sidebar .Navbar > ul > li:nth-child(2) {
 					-moz-transition-delay: 0.65s;
 					-webkit-transition-delay: 0.65s;
 					-ms-transition-delay: 0.65s;
 					transition-delay: 0.65s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(3) {
+				#sidebar .Navbar > ul > li:nth-child(3) {
 					-moz-transition-delay: 0.85s;
 					-webkit-transition-delay: 0.85s;
 					-ms-transition-delay: 0.85s;
 					transition-delay: 0.85s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(4) {
+				#sidebar .Navbar > ul > li:nth-child(4) {
 					-moz-transition-delay: 1.05s;
 					-webkit-transition-delay: 1.05s;
 					-ms-transition-delay: 1.05s;
 					transition-delay: 1.05s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(5) {
+				#sidebar .Navbar > ul > li:nth-child(5) {
 					-moz-transition-delay: 1.25s;
 					-webkit-transition-delay: 1.25s;
 					-ms-transition-delay: 1.25s;
 					transition-delay: 1.25s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(6) {
+				#sidebar .Navbar > ul > li:nth-child(6) {
 					-moz-transition-delay: 1.45s;
 					-webkit-transition-delay: 1.45s;
 					-ms-transition-delay: 1.45s;
 					transition-delay: 1.45s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(7) {
+				#sidebar .Navbar > ul > li:nth-child(7) {
 					-moz-transition-delay: 1.65s;
 					-webkit-transition-delay: 1.65s;
 					-ms-transition-delay: 1.65s;
 					transition-delay: 1.65s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(8) {
+				#sidebar .Navbar > ul > li:nth-child(8) {
 					-moz-transition-delay: 1.85s;
 					-webkit-transition-delay: 1.85s;
 					-ms-transition-delay: 1.85s;
 					transition-delay: 1.85s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(9) {
+				#sidebar .Navbar > ul > li:nth-child(9) {
 					-moz-transition-delay: 2.05s;
 					-webkit-transition-delay: 2.05s;
 					-ms-transition-delay: 2.05s;
 					transition-delay: 2.05s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(10) {
+				#sidebar .Navbar > ul > li:nth-child(10) {
 					-moz-transition-delay: 2.25s;
 					-webkit-transition-delay: 2.25s;
 					-ms-transition-delay: 2.25s;
 					transition-delay: 2.25s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(11) {
+				#sidebar .Navbar > ul > li:nth-child(11) {
 					-moz-transition-delay: 2.45s;
 					-webkit-transition-delay: 2.45s;
 					-ms-transition-delay: 2.45s;
 					transition-delay: 2.45s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(12) {
+				#sidebar .Navbar > ul > li:nth-child(12) {
 					-moz-transition-delay: 2.65s;
 					-webkit-transition-delay: 2.65s;
 					-ms-transition-delay: 2.65s;
 					transition-delay: 2.65s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(13) {
+				#sidebar .Navbar > ul > li:nth-child(13) {
 					-moz-transition-delay: 2.85s;
 					-webkit-transition-delay: 2.85s;
 					-ms-transition-delay: 2.85s;
 					transition-delay: 2.85s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(14) {
+				#sidebar .Navbar > ul > li:nth-child(14) {
 					-moz-transition-delay: 3.05s;
 					-webkit-transition-delay: 3.05s;
 					-ms-transition-delay: 3.05s;
 					transition-delay: 3.05s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(15) {
+				#sidebar .Navbar > ul > li:nth-child(15) {
 					-moz-transition-delay: 3.25s;
 					-webkit-transition-delay: 3.25s;
 					-ms-transition-delay: 3.25s;
 					transition-delay: 3.25s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(16) {
+				#sidebar .Navbar > ul > li:nth-child(16) {
 					-moz-transition-delay: 3.45s;
 					-webkit-transition-delay: 3.45s;
 					-ms-transition-delay: 3.45s;
 					transition-delay: 3.45s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(17) {
+				#sidebar .Navbar > ul > li:nth-child(17) {
 					-moz-transition-delay: 3.65s;
 					-webkit-transition-delay: 3.65s;
 					-ms-transition-delay: 3.65s;
 					transition-delay: 3.65s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(18) {
+				#sidebar .Navbar > ul > li:nth-child(18) {
 					-moz-transition-delay: 3.85s;
 					-webkit-transition-delay: 3.85s;
 					-ms-transition-delay: 3.85s;
 					transition-delay: 3.85s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(19) {
+				#sidebar .Navbar > ul > li:nth-child(19) {
 					-moz-transition-delay: 4.05s;
 					-webkit-transition-delay: 4.05s;
 					-ms-transition-delay: 4.05s;
 					transition-delay: 4.05s;
 				}
 
-				#sidebar Navbar > ul > li:nth-child(20) {
+				#sidebar .Navbar > ul > li:nth-child(20) {
 					-moz-transition-delay: 4.25s;
 					-webkit-transition-delay: 4.25s;
 					-ms-transition-delay: 4.25s;
 					transition-delay: 4.25s;
 				}
 
-		#sidebar Navbar a {
+		#sidebar .Navbar a {
 			-moz-transition: color 0.2s ease;
 			-webkit-transition: color 0.2s ease;
 			-ms-transition: color 0.2s ease;
@@ -3750,7 +3750,7 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-			#sidebar Navbar a:before, #sidebar Navbar a:after {
+			#sidebar .Navbar a:before, #sidebar .Navbar a:after {
 				border-radius: 0.2em;
 				bottom: 0;
 				content: '';
@@ -3760,11 +3760,11 @@ input, select, textarea {
 				width: 100%;
 			}
 
-			#sidebar Navbar a:before {
+			#sidebar .Navbar a:before {
 				background: #3c2c62;
 			}
 
-			#sidebar Navbar a:after {
+			#sidebar .Navbar a:after {
 				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
@@ -3776,23 +3776,23 @@ input, select, textarea {
 				max-width: 0;
 			}
 
-			#sidebar Navbar a:hover {
+			#sidebar .Navbar a:hover {
 				color: rgba(255, 255, 255, 0.55);
 			}
 
-			#sidebar Navbar a.active {
+			#sidebar .Navbar a.active {
 				color: #ffffff;
 			}
 
-				#sidebar Navbar a.active:after {
+				#sidebar .Navbar a.active:after {
 					max-width: 100%;
 				}
 
-		body.is-preload #sidebar > .inner {
+		.is-preload #sidebar > .inner {
 			opacity: 0;
 		}
 
-		body.is-preload #sidebar Navbar ul li {
+		.is-preload #sidebar .Navbar ul li {
 			-moz-transform: translateY(2em);
 			-webkit-transform: translateY(2em);
 			-ms-transform: translateY(2em);
@@ -3826,12 +3826,12 @@ input, select, textarea {
 					line-height: inherit;
 				}
 
-				#sidebar Navbar {
+				#sidebar .Navbar {
 					height: inherit;
 					line-height: inherit;
 				}
 
-					#sidebar Navbar ul {
+					#sidebar .Navbar ul {
 						display: -moz-flex;
 						display: -webkit-flex;
 						display: -ms-flex;
@@ -3841,7 +3841,7 @@ input, select, textarea {
 						margin: 0;
 					}
 
-						#sidebar Navbar ul li {
+						#sidebar .Navbar ul li {
 							display: block;
 							height: inherit;
 							line-height: inherit;
@@ -3849,13 +3849,13 @@ input, select, textarea {
 							padding: 0;
 						}
 
-					#sidebar Navbar a {
+					#sidebar .Navbar a {
 						height: inherit;
 						line-height: inherit;
 						padding: 0;
 					}
 
-						#sidebar Navbar a:after {
+						#sidebar .Navbar a:after {
 							background-image: none;
 							background-color: #b74e91;
 						}

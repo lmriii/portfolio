@@ -32,12 +32,12 @@
 			opacity: 1;
 			width: 100%;
 
-			body.is-ie & {
+			#body.is-ie & {
 				height: 100%;
 			}
 		}
 
-		nav {
+		.Navbar {
 			> ul {
 				list-style: none;
 				padding: 0;
@@ -115,12 +115,12 @@
 			}
 		}
 
-		body.is-preload & {
+		.body.is-preload & {
 			> .inner {
 				opacity: 0;
 			}
 
-			nav {
+			.Navbar {
 				ul {
 					li {
 						@include vendor('transform', 'translateY(2em)');
@@ -147,7 +147,7 @@
 				line-height: inherit;
 			}
 
-			nav {
+			.Navbar {
 				height: inherit;
 				line-height: inherit;
 

@@ -8,49 +8,49 @@ import '../assets/css/noscript.css';
 
 
 interface Props {
-	
+
 
 }
 
 
 
-export default function Navigation({}: Props) {
+export default function Navigation({ }: Props) {
 
 
 	return (
 
 		<section id='sidebar'>
-		<div className='inner'>
-		<Navbar className='Navbar'>
-			
-			
-				<NavbarBrand></NavbarBrand>
+			<div className='inner'>
+				<Navbar className='Navbar'>
+
+
+					<NavbarBrand></NavbarBrand>
 					<Nav>
 						<NavItem>
 							<NavLink className='nav-link' to='/'>
-								Welcome
+								<a href='#intro'>Welcome</a>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink className='nav-link' to='/'>
-								Who is Michael
+								<a href='#one'>Who is Michael</a>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink className='nav-link' to='/'>
-								What I Do
+								<a href='#two'>What I Do</a>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink className='nav-link' to='/'>
-								Get In Touch
+								<a href='#three'>Get In Touch</a>
 							</NavLink>
 						</NavItem>
 					</Nav>
-			
-			
-		</Navbar>
-		</div>
+
+
+				</Navbar>
+			</div>
 		</section>
 
 	);

@@ -19,7 +19,7 @@ export default function MainSection() {
                     <div className="inner">
                         <h1>Hi! This is Michael</h1>
                         <p>I am a Junior Software Developer.</p>
-                        <p>I started off modifying simple HTML sites many, many years ago. Between those experiences and further studies I became pretty decent at it. </p>
+                        <p>I started off modifying simple HTML sites a handful of years ago. Between those experiences and further studies I became pretty decent at it. </p>
                         <ul className="actions">
                             <li><a href="#one" className="button scrolly">Learn more</a></li>
                         </ul>
@@ -29,7 +29,7 @@ export default function MainSection() {
 
                 <section id="one" className="wrapper style2 spotlights">
                     <section>
-                        <a href="https://photo-site-reactjs.netlify.app/" target="_blank" rel="noreferrer" className="image"><img src={process.env.PUBLIC_URL + '/images/cksite.jpg'} alt="Photographer's Site" width="437" height="300" data-position="center center" /></a>
+                        <a href="https://photo-site-reactjs.netlify.app/" target="_blank" rel="noreferrer" className="image"><img src={process.env.PUBLIC_URL + '/images/cksite.png'} alt="Photographer's Site"  data-position="center center" style={{width:437 }} /></a>
                         <div className="content">
                             <div className="inner">
                                 <h2>Photographer's Portfolio in React</h2>

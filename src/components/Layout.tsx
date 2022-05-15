@@ -7,7 +7,7 @@ import Footer from "./Footer";
 export default function Layout() {
     return (
         <>
-            <div className="is-preload">
+            <div id="body" className="is-preload">
 
                 <Navigation />
                 <Routes>
