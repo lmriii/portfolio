@@ -25,6 +25,7 @@ export default function MainSection() {
                             <li><a href="#one" className="button scrolly">Projects</a></li>
                             <li><a href="#two" className="button scrolly">I'm a real person</a></li>
                             <li><a href="#three" className="button scrolly">Let's connect!</a></li>
+                            <li><Link to='/assets/Michael_Rivera.pdf' target="_blank" rel="noreferrer" download className="button">Resume PDF</Link>       </li>
                         </ul>
                     </div>
                 </section>
@@ -176,7 +177,7 @@ export default function MainSection() {
                                     </li>
                                     <li>
                                         <h3>Email</h3>
-                                        <a href="mailto:mrwolf.lmriii@gmail.com?subject=Let's Connect!">mrwolf.lmriii@gmail.com</a>
+                                        <a href="mailto:mrwolf.lmriii@gmail.com?subject=Let's Connect!" style={{boxShadow: ".5px .5px"}}>mrwolf.lmriii@gmail.com</a>
                                     </li>
                                     <li>
                                         <h3>Phone</h3>
