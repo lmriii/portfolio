@@ -1,23 +1,21 @@
-import React, { Fragment } from 'react';
-import { Nav, Navbar, NavbarToggler, Collapse, NavItem, NavbarBrand, NavLink } from 'reactstrap';
+import React from 'react';
+// import { Nav, Navbar, NavbarToggler, Collapse, NavItem, NavbarBrand, NavLink } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 // import {Navlink} from 'react-router-dom'
 
 
 
-interface Props {
-	
-
-}
 
 
 
-export default function Footer({}: Props) {
+
+export default function Footer() {
 
 
 	return (
-		<React.Fragment>
-		<Navbar >
+		<>
+		
+			{/* <Navbar >
 			<section id='sidebar'>
 			<div className='inner'>
 				<NavbarBrand></NavbarBrand>
@@ -45,10 +43,10 @@ export default function Footer({}: Props) {
 					</Nav>
 			</div>
 			</section>
-		</Navbar>
+		</Navbar> */}
 
-			
-		</React.Fragment>
+
+		</>
 	);
 };
 

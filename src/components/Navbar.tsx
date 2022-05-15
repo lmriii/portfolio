@@ -1,55 +1,54 @@
-import React, { Fragment } from 'react';
-import { Nav, Navbar, NavbarToggler, Collapse, NavItem, NavbarBrand, NavLink } from 'reactstrap';
+import React from 'react';
+import { Nav, Navbar, NavItem, NavbarBrand, NavLink } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../assets/css/main.css';
 import '../assets/css/noscript.css';
+
 // import {Navlink} from 'react-router-dom'
 
 
 
-interface Props {
-
-
-}
 
 
 
-export default function Navigation({ }: Props) {
+
+export default function Navigation() {
 
 
 	return (
 
-		<section id='sidebar'>
+		<section id='sidebar' style={{overflow: "hidden"}}>
 			<div className='inner'>
-				<Navbar className='Navbar'>
-
-
-					<NavbarBrand></NavbarBrand>
+				<Navbar >
+			<section id='sidebar'>
+			<div className='inner'>
+				<NavbarBrand></NavbarBrand>
 					<Nav>
 						<NavItem>
-							<NavLink className='nav-link' to='/'>
-								<a href='#intro'>Welcome</a>
+							<NavLink className='nav-link' href='#intro' style={{width: "150%", textAlign: "left"}}>
+								Home Page
+							</NavLink>
+						</NavItem>
+						
+						<NavItem>
+							<NavLink className='nav-link' href='#one' style={{width: "150%", textAlign: "left"}}>
+								My Projects
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink className='nav-link' to='/'>
-								<a href='#one'>Who is Michael</a>
+							<NavLink className='nav-link' href='#two' style={{width: "150%", textAlign: "left"}}>
+								I'm a real person
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink className='nav-link' to='/'>
-								<a href='#two'>What I Do</a>
-							</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink className='nav-link' to='/'>
-								<a href='#three'>Get In Touch</a>
+							<NavLink className='nav-link' href='#three' style={{width: "150%", textAlign: "left"}}>
+								Let's connect!
 							</NavLink>
 						</NavItem>
 					</Nav>
-
-
-				</Navbar>
+			</div>
+			</section>
+		</Navbar>
 			</div>
 		</section>
 
